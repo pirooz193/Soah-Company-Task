@@ -1,12 +1,12 @@
 package com.soha.soha.log;
 
-import com.soha.soha.rest.LogRestController;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
+
 
 public class AppLogger {
 

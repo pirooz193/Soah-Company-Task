@@ -23,8 +23,8 @@ public class LogRestController {
 
 
             RestTemplate restTemplate = new RestTemplate();
-            String fooResourceUrl = "https://random-data-api.com/api/users/random_user";
-            ResponseEntity<String> response = restTemplate.getForEntity(fooResourceUrl, String.class);
+            String resourceUrl = "https://random-data-api.com/api/users/random_user";
+            ResponseEntity<String> response = restTemplate.getForEntity(resourceUrl, String.class);
 
             AppLogger.logRequest(request, LogRestController.class);
             AppLogger.logResponses(response, LogRestController.class);
