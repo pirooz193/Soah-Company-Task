@@ -25,11 +25,10 @@ public class AppLogger {
     }
 
     /**
-     * this method logs the response and requests( in the file and console )
+     * This Method id Logging  Requests
      *
      * @param response
      * @param clazz
-     * @throws IOException
      */
     public static <T> void logResponses(ResponseEntity<String> response, Class<T> clazz) {
         Logger logger = LoggerFactory.getLogger(clazz);
