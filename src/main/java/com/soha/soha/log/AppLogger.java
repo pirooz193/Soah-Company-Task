@@ -16,7 +16,7 @@ public class AppLogger {
      * @param request
      * @param clazz
      */
-    public static void logRequest(HttpServletRequest request, Class clazz) {
+    public static <T> void logRequest(HttpServletRequest request, Class<T> clazz) {
         Logger logger = LoggerFactory.getLogger(clazz);
         logger.info("Request Method : " + request.getMethod());
         logger.info("Request Address : " + request.getRemoteAddr());
@@ -31,7 +31,7 @@ public class AppLogger {
      * @param clazz
      * @throws IOException
      */
-    public static void logResponses(ResponseEntity<String> response, Class clazz) {
+    public static <T> void logResponses(ResponseEntity<String> response, Class<T> clazz) {
         Logger logger = LoggerFactory.getLogger(clazz);
         logger.info("Header : " + response.getHeaders().toString());
         logger.info("Body : " + response.getBody());
