@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 public class AppLogger {
 
     /**
-     * This Method id Logging  Requests
+     * This Method is Logging  Requests
      *
      * @param request
      * @param clazz
@@ -25,7 +25,7 @@ public class AppLogger {
     }
 
     /**
-     * This Method id Logging  Response
+     * This Method is Logging  Response
      *
      * @param response
      * @param clazz
